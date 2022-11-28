@@ -4,58 +4,46 @@ import { Link, NavLink } from "react-router-dom";
 const MasterlistComp = () => {
   return (
     <>
-      <div className="w-full bg-q-black">
+      <div className="h-auto w-full bg-q-black ">
         <ul className="space-y-2 py-2">
           <li>
-            <NavLink to="" className="group ">
+            <NavLink to="masterlist/user-accounts" className="masterlist group">
               User Accounts
             </NavLink>
           </li>
           <li>
             <NavLink
-              to=""
-              className="group flex w-full items-center rounded-lg p-2 pl-11 text-xs font-normal text-gray-50 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              to="masterlist/business-operation"
+              className="masterlist group"
             >
               Business Operation
             </NavLink>
           </li>
           <li>
             <NavLink
-              to=""
-              className="group flex w-full items-center rounded-lg p-2 pl-11 text-xs font-normal text-gray-50 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              to="masterlist/business-model"
+              className="masterlist group"
             >
               Business Model
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to=""
-              className="group flex w-full items-center rounded-lg p-2 pl-11 text-xs font-normal text-gray-50 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-            >
+            <NavLink to="" className="masterlist group">
               Order Types
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to=""
-              className="group flex w-full items-center rounded-lg p-2 pl-11 text-xs font-normal text-gray-50 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-            >
+            <NavLink to="" className="masterlist group">
               Product Details
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to=""
-              className="group flex w-full items-center rounded-lg p-2 pl-11 text-xs font-normal text-gray-50 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-            >
+            <NavLink to="" className="masterlist group">
               Type of Payment
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to=""
-              className="group flex w-full items-center rounded-lg p-2 pl-11 text-xs font-normal text-gray-50 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-            >
+            <NavLink to="" className="masterlist group">
               Mode of Payment
             </NavLink>
           </li>

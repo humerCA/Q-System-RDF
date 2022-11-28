@@ -52,7 +52,8 @@ module.exports = withMT({
           50 :'#686B6E',
           100:'#383C41',
           DEFAULT: '#202327'
-        }
+        },
+        'q-card' : '#282B30'
     },
 
     fontSize: {
@@ -91,6 +92,9 @@ variants: {
 },
 
 plugins: [
-  require('@tailwindcss/typography'),
+  require('@tailwindcss/typography'), require('tailwind-scrollbar')
 ],
+variants : {
+  scrollbar: ['rounded']
+}
 })

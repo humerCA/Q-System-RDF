@@ -13,7 +13,11 @@ import HistoryLogs from "./Pages/HistoryLogs";
 import DataMigration from "./Pages/DataMigration";
 import ActivityLogs from "./Pages/ActivityLogs";
 import RewardPoints from "./Pages/RewardPoints";
+
+// Masterlist
 import UserAccounts from "./Pages/Masterlist/UserAccounts";
+import BusinessModel from "./Pages/Masterlist/BusinessModel";
+import BusinessOperation from "./Pages/Masterlist/BusinessOperation";
 
 const router = createBrowserRouter([
   {
@@ -40,8 +44,16 @@ const router = createBrowserRouter([
             element: <Masterlist />,
             children: [
               {
-                index: true,
+                path: "user-accounts",
                 element: <UserAccounts />,
+              },
+              {
+                path: "business-operation",
+                element: <BusinessOperation />,
+              },
+              {
+                path: "business-model",
+                element: <BusinessModel />,
               },
             ],
           },

@@ -18,8 +18,8 @@ const SidebarMenus = () => {
 
   return (
     <>
-      <div className="flex w-full">
-        <ul className="flex w-full flex-col text-sm [&>*]:pl-10">
+      <div className="flex w-full ">
+        <ul className="flex w-full flex-col text-sm [&>*]:pl-10 ">
           <NavLink to="/" className="navLink group">
             <MdOutlineDashboard className="svgIcon" />
             Dashboard
@@ -27,7 +27,7 @@ const SidebarMenus = () => {
 
           <NavLink
             to="/masterlist"
-            className="navLink group"
+            className="navLink group "
             onClick={() => {
               setOpen(!open);
             }}
