@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .active {
+    @apply bg-q-black text-qsystem hover:!bg-q-black;
+  }
+
+  .active svg {
+    @apply -ml-1 box-content inline-block rounded border-4 border-[#EA7E34] border-opacity-10 bg-[#EA7E34] bg-opacity-40;
+  }
+
+  .svgIcon {
+    @apply mr-4 text-2xl group-hover:text-qsystem;
+  }
+  .active span {
+    @apply text-gray-50 active:group-hover:text-gray-50;
+  }
+
+  .navLink {
+    @apply flex h-12 w-full items-center hover:bg-q-black-100;
+  }
+
+  .masterlist {
+    @apply flex w-full items-center rounded-lg p-2 pl-11 text-xs font-normal text-gray-50 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700;
+  }
+}

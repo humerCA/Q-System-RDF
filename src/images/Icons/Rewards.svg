@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+<path style="fill:#010101; stroke:none;" d="M0 0L0 8L4 2L11 0L0 0z"/>
+<path style="fill:#f0f0f0; stroke:none;" d="M4 2L0 18L4 18L4 23L10 22L11 25L20 23L24 8L21 3L20 2L4 2z"/>
+<path style="fill:#010101; stroke:none;" d="M13 0L20 2L21 3C20.5057 6.13718 20.9641 6.99962 24 8L20 23L13 25L25 25L25 0L13 0M11 2L6 5L5 9L18 9L18 5L11 2z"/>
+<path style="fill:#83776e; stroke:none;" d="M2 11L2 15L3 15L2 11z"/>
+<path style="fill:#493529; stroke:none;" d="M3 11L4 12L3 11z"/>
+<path style="fill:#aba39e; stroke:none;" d="M5 11L5 15L6 15L5 11z"/>
+<path style="fill:#493529; stroke:none;" d="M6.66667 11.3333L7.33333 11.6667L6.66667 11.3333z"/>
+<path style="fill:#83776e; stroke:none;" d="M8 11L9 12L8 11z"/>
+<path style="fill:#aba39e; stroke:none;" d="M8 14L12 15L12 11L8 14M13 11L16 15L13 11z"/>
+<path style="fill:#493529; stroke:none;" d="M16 11L17 12L16 11z"/>
+<path style="fill:#83776e; stroke:none;" d="M16 12L16 13L18 15L20 12L21 12L21 14L22 14L21 11L16 12z"/>
+<path style="fill:#f0f0f0; stroke:none;" d="M3 12L4 13L3 12z"/>
+<path style="fill:#83776e; stroke:none;" d="M4 12L5 13L4 12z"/>
+<path style="fill:#f0f0f0; stroke:none;" d="M6.66667 12.3333L7.33333 12.6667L6.66667 12.3333z"/>
+<path style="fill:#83776e; stroke:none;" d="M10 12L11 13L10 12z"/>
+<path style="fill:#f0f0f0; stroke:none;" d="M17 12L19 14L17 12M20.3333 12.6667L20.6667 13.3333L20.3333 12.6667z"/>
+<path style="fill:#493529; stroke:none;" d="M3 13L4 14L3 13M6 13L6 15L8 15L6 13z"/>
+<path style="fill:#83776e; stroke:none;" d="M7 13L8 14L7 13M9.33333 13.6667L9.66667 14.3333L9.33333 13.6667M11 13L12 14L11 13z"/>
+<path style="fill:#493529; stroke:none;" d="M16.6667 13.3333L17.3333 13.6667L16.6667 13.3333M4 14L5 15L4 14z"/>
+<path style="fill:#83776e; stroke:none;" d="M12 14L12 15L15 15L12 14M16 14L17 15L16 14z"/>
+<path style="fill:#493529; stroke:none;" d="M20 14L21 15L20 14z"/>
+<path style="fill:#aba39e; stroke:none;" d="M21 14L22 15L21 14z"/>
+<path style="fill:#010101; stroke:none;" d="M6 17L6 21L13 23L18 21L19 17L6 17M0 18L0 25L11 25L10 22L4 23L4 18L0 18z"/>
+</svg>

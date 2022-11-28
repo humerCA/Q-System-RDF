@@ -1,0 +1,58 @@
+INSTALLATIONS
+-----------------------------------------------------------
+
+---<=CREATING PROJECT>=---
+/* VITE - REACT - TAILWIND */ => https://tailwindcss.com/docs/guides/vite
+
+// Terminal
+-> npm create vite@latest my-project -- --template react
+-> npm install -D tailwindcss postcss autoprefixer
+-> npx tailwindcss init -p
+-> npm run dev
+
+-----------------------------------------------------------
+
+// CONFIG
+->   content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+-----------------------------------------------------------
+
+// INDEX.CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+-----------------------------------------------------------
+
+---<=UI FRAMEWORK>=---
+/* TAILWIND INTELLISENSE */
+npm install -D prettier prettier-plugin-tailwindcss
+
+-----------------------------------------------------------
+
+// prettier.config.js
+module.exports = {
+    plugins: [require('prettier-plugin-tailwindcss')],
+  }
+
+-----------------------------------------------------------
+
+---<=OTHER INSTALLATIONS>=---
+
+// JWT => https://www.npmjs.com/package/jsonwebtoken
+-> npm install jsonwebtoken
+
+=> import { useJwt } from "react-jwt";
+=> import jwtDecode from "jwt-decode";
+
+-----------------------------------------------------------
+
+// HOOK FORMS => https://react-hook-form.com/ (Yup)
+-> npm install react-hook-form @hookform/resolvers yup
+
+
+// AXIOS => https://axios-http.com/docs/intro
+-> npm install axios
