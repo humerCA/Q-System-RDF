@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { MdSignalWifiStatusbar4Bar, MdSignalWifiOff } from "react-icons/md";
 
 const Footer = () => {
+  const [online, setOnline] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("online", () => setOnline(true));
+    window.addEventListener("offline", () => setOnline(false));
+  }, []);
+
   return (
     <>
-      <div className="flex justify-end p-1 px-5 bg-[#25282D] font-medium text-white text-sm">
-        <div className="flex content-center ">
+      <div className="flex w-full justify-end bg-[#25282D] p-1 px-5 text-sm font-medium text-white">
+        <div className="flex items-center ">
           <span className="mr-2 text-[#6D6D6D]">Status:</span>
-          {/* {Online ? (
-            <MdSignalWifiOff className="mr-2 mt-[0.5]" />
+          {online ? (
+            <>
+              <MdSignalWifiStatusbar4Bar className="mr-2 -mt-0.5 flex" /> ONLINE
+            </>
           ) : (
-            <MdSignalWifiStatusbar4Bar className="mr-2 mt-1" />
-          )} */}
-          ONLINE
+            <>
+              <MdSignalWifiOff className="mr-2 -mt-0.5 flex" /> OFFLINE
+            </>
+          )}
         </div>
       </div>
     </>

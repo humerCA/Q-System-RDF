@@ -1,5 +1,11 @@
 import axios from "axios";
 
+// const Base_URL = 'http://10.10.10.4:8000/api'
+
+// MockApi
+// const Base_URL='https://6386b780d9b24b1be3dce45b.mockapi.io/Q-API/'
+
+// NGROK
 const Base_URL = 'http://10.10.10.4:8000/api'
 
 

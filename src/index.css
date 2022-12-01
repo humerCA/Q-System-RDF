@@ -14,19 +14,28 @@
   .svgIcon {
     @apply mr-4 -ml-1 box-content border-4 border-transparent text-2xl group-hover:text-qsystem;
   }
-  .active span {
-    @apply text-gray-50 active:group-hover:text-gray-50;
-  }
 
   .navLink {
     @apply flex h-12 w-full items-center hover:bg-q-black-100;
   }
 
   .masterlist {
-    @apply flex w-full items-center rounded-lg p-2 pl-14 text-xs font-normal text-gray-50 transition duration-75 hover:bg-q-black-100;
+    @apply flex w-full items-center rounded-lg py-2 pl-8 text-xs font-normal text-gray-50 transition duration-75 hover:bg-q-black-100;
   }
 
   .customScrollbar {
-    @apply -mr-2 overflow-y-scroll scroll-smooth scrollbar-thin scrollbar-track-transparent scrollbar-thumb-q-black-50 scrollbar-track-rounded-full scrollbar-thumb-rounded-full;
+    @apply overflow-y-scroll scroll-smooth scrollbar-thin scrollbar-track-transparent scrollbar-thumb-q-black-50 scrollbar-track-rounded-full scrollbar-thumb-rounded-full;
+  }
+
+  .tBorderLeft {
+    @apply border-l border-q-black-100 border-opacity-90;
+  }
+
+  .pagination {
+    @apply border border-q-black bg-q-card px-3 py-1 text-sm leading-tight text-q-black-50 hover:bg-q-black-50 hover:text-white;
+  }
+
+  .calcNav {
+    @apply h:calc(100%-[60px]);
   }
 }

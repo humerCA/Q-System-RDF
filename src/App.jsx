@@ -18,6 +18,7 @@ import RewardPoints from "./Pages/RewardPoints";
 import UserAccounts from "./Pages/Masterlist/UserAccounts";
 import BusinessModel from "./Pages/Masterlist/BusinessModel";
 import BusinessOperation from "./Pages/Masterlist/BusinessOperation";
+import AddUser from "./Pages/Masterlist/Add/AddUser";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,12 @@ const router = createBrowserRouter([
               {
                 path: "user-accounts",
                 element: <UserAccounts />,
+                children: [
+                  {
+                    path: "add-user",
+                    element: <AddUser />,
+                  },
+                ],
               },
               {
                 path: "business-operation",

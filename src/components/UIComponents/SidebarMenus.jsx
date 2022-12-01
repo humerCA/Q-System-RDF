@@ -19,7 +19,7 @@ const SidebarMenus = () => {
   return (
     <>
       <div className="flex w-full ">
-        <ul className="flex w-full flex-col text-sm [&>*]:pl-10 ">
+        <ul className="flex w-full flex-col text-sm [&>*]:pr-4 [&>*]:pl-10">
           <NavLink to="/" className="navLink group">
             <MdOutlineDashboard className="svgIcon" />
             Dashboard

@@ -7,7 +7,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { usersAPI } from "../api/Users";
 
 // COMPONENTS
-import { Button } from "@material-tailwind/react";
 import InputBox from "../components/UIComponents/InputBox";
 
 // IMG
@@ -23,6 +22,7 @@ import { MdOutlineLogin } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { useDispatch, useSelector } from "react-redux";
 
 const schema = yup.object().shape({
   username: yup.string().required(),
@@ -30,6 +30,9 @@ const schema = yup.object().shape({
 });
 
 const Landing = () => {
+  // const { token } = useSelector((state) => state.token);
+  const dispatch = useDispatch();
+
   const {
     register,
     handleSubmit,
@@ -48,6 +51,7 @@ const Landing = () => {
     console.log({ data });
     try {
       const result = await usersAPI.post("/login", data);
+      // const result = await usersAPI.post("/UserLogin", data);
       console.log(result.data);
       localStorage.setItem("token", result.data.data.token);
       localStorage.setItem("username", result.data.data.user.username);
@@ -82,13 +86,13 @@ const Landing = () => {
         <div className="z-30 flex w-full max-w-3xl animate-fade items-center justify-center opacity-0">
           <form
             onSubmit={handleSubmit(onSubmitHandler)}
-            className="h-full w-auto rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 p-10 shadow-lg md:w-[55%] lg:w-[85%] lg:pr-14"
+            className="h-full w-auto rounded-xl bg-gradient-to-b from-neutral-700 to-neutral-900 p-10 shadow-lg sm:w-[55%] lg:w-[85%] lg:pr-14"
           >
             <h1 className="flex items-center text-2xl font-bold text-gray-50">
               <MdOutlineLogin className="mr-3 text-4xl font-bold text-[#1FB58F]" />
               Login
             </h1>
-            <div className="mt-8 space-y-6">
+            <div className="mt-8 space-y-4">
               <InputBox
                 {...register("username")}
                 autoComplete="off"
@@ -98,9 +102,9 @@ const Landing = () => {
                 htmlFor="username"
                 placeholder="Username"
               />
-              <p className="ml-2 -mt-10 mb-2 text-xs text-red-500 ">
+              <span className="ml-2 text-xs text-red-500 ">
                 {errors.username?.message}
-              </p>
+              </span>
               <InputBox
                 {...register("password")}
                 autoComplete="off"
@@ -110,17 +114,18 @@ const Landing = () => {
                 htmlFor="password"
                 placeholder="Password"
               />
-              <p className="ml-2 mb-2 text-xs text-red-500 ">
+              <span className="ml-2 mb-2 text-xs text-red-500 ">
                 {errors.password?.message}
-              </p>
+              </span>
 
-              <div className="form-check flex items-center py-2 pl-2">
+              {/* Remember Me */}
+              {/* <div className="form-check flex items-center py-2 pl-2">
                 <input
                   {...register("checkbox")}
                   id="checked-checkbox"
                   type="checkbox"
                   value=""
-                  className="h-4 w-4 appearance-none rounded border-gray-300 bg-gray-100 text-qsystem checked:bg-qsystem focus:ring-2 focus:ring-orange-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-orange-600"
+                  className="h-4 w-4 appearance-none rounded border-gray-300 bg-gray-100 text-qsystem checked:bg-qsystem focus:ring-2 focus:ring-orange-400 "
                 />
                 <label
                   htmlFor="checked-checkbox"
@@ -128,9 +133,10 @@ const Landing = () => {
                 >
                   Remember me
                 </label>
-              </div>
+              </div> */}
 
-              <Button
+              <button
+                className="flex w-full justify-center rounded-md bg-qsystem p-2 text-base text-gray-50 shadow-lg disabled:bg-gray-600  hover:bg-[#f07320] hover:shadow-[#402a1b] disabled:hover:bg-gray-600 disabled:hover:shadow-none"
                 disabled={
                   (errors.password ? true : false) ||
                   (errors.username ? true : false) ||
@@ -140,10 +146,9 @@ const Landing = () => {
                   watch("password") === ""
                 }
                 type="submit"
-                className="shadow-black-sm shadow-[#EA7E34]-sm w-full rounded-md bg-qsystem p-1 text-base hover:bg-[#f78437] hover:shadow-[#76431e] disabled:bg-gray-600"
               >
                 LOGIN
-              </Button>
+              </button>
             </div>
             <div className="flex flex-col items-center pt-5">
               <img src={MisLogo} alt="MIS-Logo" className="flex h-auto w-14" />

@@ -6,7 +6,7 @@ const InputBox = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <div className="relative m-2 grow">
+      <div className="relative mx-2 grow">
         <input
           ref={ref}
           className={` ${className} peer mt-1 h-8 w-full border-b-[1px] border-gray-700 bg-transparent text-base text-gray-50 placeholder-transparent focus:border-b-[2.5px] focus:border-[#EA7E34] focus:outline-none dark:border-gray-500 dark:bg-transparent dark:text-gray-50 dark:focus:border-[#EA7E34]`}

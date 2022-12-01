@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const withMT = require("@material-tailwind/react/utils/withMT");
-
-module.exports = withMT({
+module.exports = ({
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -92,9 +90,6 @@ variants: {
 },
 
 plugins: [
-  require('@tailwindcss/typography'), require('tailwind-scrollbar')
+  require('@tailwindcss/typography'), require('tailwind-scrollbar')({ nocompatible: true })
 ],
-variants : {
-  scrollbar: ['rounded']
-}
 })
