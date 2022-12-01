@@ -3,7 +3,10 @@ import React from "react";
 const Dashboard = () => {
   return (
     <>
-      <main className="flex h-full w-full flex-col space-y-5 bg-[#202327] py-5 text-white">
+      <main
+        className="flex h-full w-full flex-col space-y-5 bg-[#202327] py-5
+       text-white"
+      >
         <div className="flex px-24 font-bold">
           <div className="h-6 max-h-full w-1 items-center border-solid bg-gray-700 p-[1px]"></div>
           <span className="ml-3 text-[#EA7E34]">OVERVIEW</span>
